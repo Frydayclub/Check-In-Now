@@ -11,6 +11,7 @@
     <div class="flex-grow flex items-center justify-center p-4">
         <div class="bg-white p-8 rounded-2xl shadow-xl w-full max-w-md border border-gray-100">
             
+            <!-- Header -->
             <div class="text-center mb-8">
                 <div class="inline-block bg-orange-100 text-orange-600 p-4 rounded-full mb-3">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -21,7 +22,9 @@
                 <p class="text-gray-500 mt-1">Please check in to secure your table</p>
             </div>
 
+            <!-- Check-In Form -->
             <form id="checkInForm" class="space-y-5" onsubmit="handleCheckIn(event)">
+                <!-- Restaurant Selection -->
                 <div>
                     <label class="block text-sm font-semibold text-gray-700 mb-1">Select Restaurant Outlet</label>
                     <select id="restaurantLocation" class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-orange-500 focus:border-orange-500 outline-none transition bg-white font-medium text-gray-800">
@@ -61,9 +64,10 @@
                 </button>
             </form>
 
+            <!-- Success Message -->
             <div id="successMessage" class="hidden text-center py-6 space-y-3">
                 <div class="inline-block bg-green-100 text-green-600 p-3 rounded-full">
-                    <svg xmlns="http://www.w3.org/2000/xl" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
                     </svg>
                 </div>
@@ -82,8 +86,8 @@
     </footer>
 
     <script>
-        // https://script.google.com/macros/s/AKfycbwRu-qGBOxVNenwViBbq9C-MuhG99Dcf37iWkIRgcMrDewyXmoRVsFMdT64G67F7OMLzQ/exec
-        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbwRu-qGBOxVNenwViBbq9C-MuhG99Dcf37iWkIRgcMrDewyXmoRVsFMdT64G67F7OMLzQ/exec";
+        // https://script.google.com/macros/s/AKfycbzNxO9dXhWyRtuy1iYdxiO_08TEp8U8C5_YEzRTXr52kqjaNzqBpoOB-BkqeRqjV-E/exec
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzNxO9dXhWyRtuy1iYdxiO_08TEp8U8C5_YEzRTXr52kqjaNzqBpoOB-BkqeRqjV-E/exec";
 
         function handleCheckIn(event) {
             event.preventDefault();
